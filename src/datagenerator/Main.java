@@ -34,7 +34,7 @@ public class Main {
         }
         
         List data = generator.generate();
-        File f = new File("start1.txt");
+        File f = new File("start2.txt");
         f.write(data);
     }
 }
