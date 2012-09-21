@@ -21,20 +21,20 @@ public class Main {
         int task = 1;
         TimestampGenerator generator = null;
         switch(task){
-            case 1:
-                int chipFrom = 21;
-                int chipTo = 21;
-                int tmPerChipFrom = 100;
-                int tmPerChipTo = 100;
-                String dateFrom = "2012-09-12 10:00:00";
-                String dateTo = "2012-09-12 10:59:00";
+            case 1:                
+                int chipFrom = 43;
+                int chipTo = 43;
+                int tmPerChipFrom = 10;
+                int tmPerChipTo = 10;
+                String dateFrom = "2012-09-12 27:00:00";
+                String dateTo = "2012-09-12 27:00:59";
 
                 generator = new TimestampGenerator(chipFrom, chipTo, tmPerChipFrom, tmPerChipTo, dateFrom, dateTo);
             break;
         }
         
         List data = generator.generate();
-        File f = new File("start2.txt");
+        File f = new File("start1.txt");
         f.write(data);
     }
 }
